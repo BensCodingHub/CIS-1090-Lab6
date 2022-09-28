@@ -12,7 +12,12 @@ let dictionary = [
 //a haystack?).
 //Return true when you find it, and false if you do not.
 function linearSearch(needle, haystack){
-    for ( let h = 0; h < dictionary.length, h++; )
+    for ( let i = 0; i < haystack.length; i++ ){
+        if ( haystack[i] == needle ){ //[i] is for all the words in the array
+            return true;
+        } 
+    }
+    return false;
 }
 
 
